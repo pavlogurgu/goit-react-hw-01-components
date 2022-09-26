@@ -1,21 +1,26 @@
 import PropTypes from 'prop-types';
-import {} from './Statistics.styled';
+import {StatisticsBox, BoxTitle, StatsList, ListItemInfo, ListItem} from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
     return (
-      <div>
+      <StatisticsBox>
+        <BoxTitle>Upload Stats</BoxTitle>
         {title !== undefined && <h2>{title}</h2>}
-        <ul>
+        <StatsList>
           {stats.flatMap(({ id, label, percentage }) => {
             return (
-              <li id={id} key={id}>
-                <span>{label}</span>
-                <span>{percentage}%</span>
-              </li>
+              <ListItem id={id} key={id}>
+                <ListItemInfo>{label}</ListItemInfo>
+                <ListItemInfo>{percentage}%</ListItemInfo>
+                
+                <h2>Глянти рандомний колір для 2</h2>
+              </ListItem>
+              
             );
           })}
-        </ul>
-      </div>
+        </StatsList>
+      </StatisticsBox>
+     
     );
   };
 
