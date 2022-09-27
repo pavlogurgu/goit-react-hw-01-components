@@ -1,0 +1,19 @@
+.Active{
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+   
+  }
+  
+  
+  .NotActive{
+  
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+ 
+  }

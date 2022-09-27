@@ -13,7 +13,7 @@ export const Statistics = ({ title, stats }) => {
                 <ListItemInfo>{label}</ListItemInfo>
                 <ListItemInfo>{percentage}%</ListItemInfo>
                 
-                <h2>Глянти рандомний колір для 2</h2>
+              
               </ListItem>
               
             );

@@ -16,12 +16,13 @@ export const StatisticsBox = styled.div`
 export const StatsList = styled.ul`
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     list-style: none;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
     padding: 0;
+    background-color: ${getRandomHexColor()};
 `
 
 export const ListItemInfo = styled.span`
@@ -32,7 +33,7 @@ export const ListItem = styled.li`
     display: block;
     padding: 0;
     padding: 10px 0;
-    background-color: whatcolor;
+   
 `
 export const BoxTitle = styled.h2`
 
@@ -43,8 +44,8 @@ export const BoxTitle = styled.h2`
    margin: 0;
 `
 
-// function getRandomHexColor() {
-//     return `#${Math.floor(Math.random() * 16777215)
-//       .toString(16)
-//       .padStart(6, 0)}`;
-//   }
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, 0)}`;
+  }
