@@ -22,7 +22,7 @@ export const StatsList = styled.ul`
     align-content: center;
     margin: 0 auto;
     padding: 0;
-    background-color: ${getRandomHexColor()};
+  
 `
 
 export const ListItemInfo = styled.span`
@@ -33,7 +33,7 @@ export const ListItem = styled.li`
     display: block;
     padding: 0;
     padding: 10px 0;
-   
+    background-color: ${getRandomHexColor()};
 `
 export const BoxTitle = styled.h2`
 

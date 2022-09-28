@@ -4,8 +4,7 @@ import {StatisticsBox, BoxTitle, StatsList, ListItemInfo, ListItem} from './Stat
 export const Statistics = ({ title, stats }) => {
     return (
       <StatisticsBox>
-        <BoxTitle>Upload Stats</BoxTitle>
-        {title !== undefined && <h2>{title}</h2>}
+        {title && <h2>{title}</h2>}
         <StatsList>
           {stats.flatMap(({ id, label, percentage }) => {
             return (
